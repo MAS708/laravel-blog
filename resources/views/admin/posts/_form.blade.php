@@ -31,14 +31,14 @@
     </div>
 </div>
 
-<div class="form-group">
+{{-- <div class="form-group">
     {!! Form::label('thumbnail_id', __('posts.attributes.thumbnail')) !!}
     {!! Form::select('thumbnail_id', $media, null, ['placeholder' => __('posts.placeholder.thumbnail'), 'class' => 'form-control' . ($errors->has('thumbnail_id') ? ' is-invalid' : '')]) !!}
 
     @error('thumbnail_id')
         <span class="invalid-feedback">{{ $message }}</span>
     @enderror
-</div>
+</div> --}}
 
 
 <div class="form-group">

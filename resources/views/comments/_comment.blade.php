@@ -2,14 +2,15 @@
     <div class="card-body">
       <div class="card-title d-flex justify-content-between">
         <h6>
-            {{ link_to_route('users.show', $comment->author->name, $comment->author) }}
+            {{-- {{ link_to_route('users.show', $comment->author->name, $comment->author) }} --}}
+            Comment
         </h6>
 
-        @can('delete', $comment)
+        {{-- @can('delete', $comment)
           {!! Form::model($comment, ['method' => 'DELETE', 'route' => ['comments.destroy', $comment], 'class' => 'form-inline pull-right', 'data-turbo' => 'true', 'data-turbo-confirm' => __('forms.comments.delete')]) !!}
             {!! Form::button('<span aria-hidden="true">&times;</span>', ['class' => 'close text-danger', 'name' => 'submit', 'type' => 'submit']) !!}
           {!! Form::close() !!}
-        @endcan
+        @endcan --}}
       </div>
 
       <p class="card-text">
